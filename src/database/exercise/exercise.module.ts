@@ -7,4 +7,4 @@ import { ExerciseService } from 'src/service/exercise.service';
   imports: [DatabaseModule],
   providers: [...exerciseProviders, ExerciseService],
 })
-export class PhotoModule {}
+export class ExerciseModule {}
