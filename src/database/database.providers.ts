@@ -2,7 +2,7 @@ import { DataSource } from 'typeorm';
 
 const dataSource = new DataSource({
   type: 'sqlite',
-  database: 'test',
+  database: 'db',
   entities: ['src/database/**/*.entity.{ts,js}'],
   migrations: ['src/migrations/**/*.{ts,js}'],
   synchronize: true, // shouldnt be used in prod
