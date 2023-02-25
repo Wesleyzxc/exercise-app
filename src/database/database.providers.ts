@@ -1,10 +1,11 @@
+import { join } from 'path';
 import { DataSource } from 'typeorm';
 
 const dataSource = new DataSource({
   type: 'sqlite',
   database: 'db',
-  entities: ['src/database/**/*.entity.{ts,js}'],
-  migrations: ['src/migrations/**/*.{ts,js}'],
+  entities: [join(__dirname, '**', '*.entity{.ts,.js}')],
+  migrations: [join(__dirname, '**', 'migrations/**/*{.ts,js}')],
   synchronize: true, // shouldnt be used in prod
 });
 
