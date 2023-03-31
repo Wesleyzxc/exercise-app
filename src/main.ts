@@ -17,10 +17,10 @@ async function bootstrap() {
   );
 
   const config = new DocumentBuilder()
-    .setTitle('Wesql Example')
-    .setDescription('Wesql API description with SQLite')
+    .setTitle('Exercise App Example')
+    .setDescription('Exercise Service description with SQLite')
     .setVersion('1.0')
-    .addTag('Wesql')
+    .addTag('Exercises')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
